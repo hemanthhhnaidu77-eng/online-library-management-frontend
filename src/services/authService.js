@@ -1,0 +1,1 @@
+import api from './api'; export const login=x=>api.post('/auth/login',x); export const register=x=>api.post('/auth/register',x);

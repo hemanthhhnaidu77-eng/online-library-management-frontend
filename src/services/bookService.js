@@ -1,0 +1,1 @@
+import api from './api'; export const listBooks=(query='',page=0)=>api.get('/books',{params:{query,page,size:12}}); export const getBook=id=>api.get(`/books/${id}`); export const createBook=x=>api.post('/books',x); export const updateBook=(id,x)=>api.put(`/books/${id}`,x); export const deleteBook=id=>api.delete(`/books/${id}`);

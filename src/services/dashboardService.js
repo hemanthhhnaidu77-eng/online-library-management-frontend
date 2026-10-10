@@ -1,0 +1,1 @@
+import api from './api'; export const dashboard=role=>api.get(`/dashboard/${role.toLowerCase()}`);

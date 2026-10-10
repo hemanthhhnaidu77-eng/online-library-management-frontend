@@ -1,0 +1,1 @@
+import api from './api'; export const borrow=bookId=>api.post('/borrow',{bookId}); export const myBorrows=()=>api.get('/borrow/my'); export const returnBook=id=>api.post(`/borrow/${id}/return`);
